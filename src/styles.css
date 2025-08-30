@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "PaperCuts2";
+    src: url('/assets/fonts/PaperCuts2.ttf') format('truetype');
+}
+
+:root {
+    --text-color: #D0D6B5;
+    --background-color: #987284;
+    --border-color: #F9B5AC;
+}
+
+* {
+    font-family: "PaperCuts2", "serif";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* надо решить куда пристроить 2 нижних цвета */
+
+/* #9DBF9E */
+
+/* #EE7674 */

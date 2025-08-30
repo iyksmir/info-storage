@@ -1,0 +1,42 @@
+@keyframes buttons-appearance {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.welcome {
+    width: 100vw;
+    height: 100dvh;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('/assets/images/welcome-illustration.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.buttons-container  {
+    margin-bottom: 84px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 16px;
+    animation: buttons-appearance .5s ease-out;
+}
+
+.start-cooking,
+.load-config {
+    padding: 4px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
