@@ -19,6 +19,17 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 /* надо решить куда пристроить 2 нижних цвета */
 
 /* #9DBF9E */

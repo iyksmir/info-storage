@@ -1,9 +1,11 @@
 import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'welcome-container',
+  selector: 'index-page',
+  imports: [RouterLink],
   templateUrl: './index.html',
   styleUrl: './index.css',
 })
 
-export class Welcome {}
+export class IndexPage {};
