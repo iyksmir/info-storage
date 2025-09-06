@@ -1,10 +1,8 @@
-@keyframes buttons-appearance {
+@keyframes block-appearance {
     from {
-        transform: scale(0);
         opacity: 0;
     }
     to {
-        transform: scale(1);
         opacity: 1;
     }
 }
@@ -42,7 +40,6 @@
     grid-template-columns: repeat(2, auto);
     column-gap: 92px;
     align-items: flex-start;
-    animation: buttons-appearance .5s ease-out;
 }
 
 .welcome__button-container {
@@ -57,6 +54,7 @@
     background-position: center center;
     background-size: cover;
     z-index: 1;
+    will-change: opacity;
 }
 
 .welcome__button-container:first-of-type:before {
@@ -65,6 +63,8 @@
     width: 240px;
     height: 240px;
     transform: scaleX(-1) translateX(-50%);
+    animation: block-appearance .3s ease-in .3s forwards;
+    opacity: 0;
 }
 
 .welcome__button-container:last-of-type:before {
@@ -73,6 +73,8 @@
     width: 320px;
     height: 320px;
     transform: translateX(50%);
+    animation: block-appearance .3s ease-in .9s forwards;
+    opacity: 0;
 }
 
 .start-cooking,
@@ -85,11 +87,18 @@
     background-color: var(--primary-background-color);
     border: 1px solid var(--primary-border-color);
     color: var(--primary-text-color);
+    opacity: 0;
     box-shadow: 4px 4px 4px 0 var(--primary-box-shadow-color) inset;
     cursor: pointer;
     z-index: 100;
+    will-change: opacity;
+}
+
+.start-cooking {
+    animation: block-appearance .3s ease-out .6s forwards;
 }
 
 .load-config {
     margin-top: 32px;
+    animation: block-appearance .3s ease-in 1.2s forwards;
 }
