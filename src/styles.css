@@ -4,18 +4,34 @@
 }
 
 :root {
-    --text-color: #D0D6B5;
-    --background-color: #987284;
-    --background-color-with-opacity: rgba(152, 114, 132, .8);
-    --border-color: #F9B5AC;
+    --primary-font-size: 16px;
+    --doubled-font-size: calc(var(--primary-font-size) * 2);
+    --trippled-font-size: calc(var(--primary-font-size) * 3);
+
+    --primary-line-height: 24px;
+    --doubled-line-height: calc(var(--primary-line-height) * 2);
+    --trippled-line-height: calc(var(--primary-line-height) * 3);
+
+    --primary-background-color: rgba(186, 192, 167, 0.7);
+    --secondary-background-color: rgba(18, 14, 16, 0.85);
+
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    
+    --primary-border-radius: 8px;
+    --doubled-border-radius: calc(var(--primary-border-radius) * 2);
+    --primary-border-color: #000;
+
+    --primary-box-shadow-color: rgba(0, 0, 0, 0.25);
+
     --max-page-width: 1600px;
-    --border-radius: 12px;
 }
 
 * {
     font-family: "PaperCuts2", "serif";
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--primary-font-size);
+    line-height: var(--primary-line-height);
     box-sizing: border-box;
 }
 
@@ -29,9 +45,3 @@ button {
     border: none;
     cursor: pointer;
 }
-
-/* надо решить куда пристроить 2 нижних цвета */
-
-/* #9DBF9E */
-
-/* #EE7674 */
