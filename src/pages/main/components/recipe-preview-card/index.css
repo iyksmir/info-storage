@@ -1,0 +1,30 @@
+:host {
+    flex: 1;
+}
+
+.recipe-preview-card {
+    padding: 32px;
+    background-color: var(--primary-background-color);
+    border-radius: var(--doubled-border-radius);
+    box-shadow: 0 0 10px 10px var(--primary-box-shadow-color) inset;
+}
+
+.recipe-preview-card__headline-container {
+    margin-bottom: 16px;
+}
+
+.recipe-preview-card__headline {
+    color: var(--primary-text-color);
+}
+
+.recipe-preview-card__recipe-illustration-container {
+    height: 280px;
+    background-color: var(--secondary-background-color);
+    border-radius: var(--doubled-border-radius);
+}
+
+@media (min-width: 1024px) {
+    :host {
+        max-width: 468px;
+    }
+}

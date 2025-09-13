@@ -1,0 +1,28 @@
+:host {
+    margin: 64px 0;
+    padding: 32px;
+    display: block;
+    background-color: var(--secondary-background-color);
+    border-radius: var(--doubled-border-radius);
+}
+
+.recent-recepies__headline-container {
+    margin-bottom: 16px;
+}
+
+.recent-recepies__headline {
+    color: var(--secondary-text-color);
+}
+
+.recent-recepies__recipies_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .recent-recepies__recipies_container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
