@@ -1,51 +1,13 @@
 <main>
     <div class="search">
         <div class="search__input-container">
-            <button class="search__button" type="button">
-                <img src="/assets/images/search-icon.svg" width="64" height="64" alt=" ">
-            </button>
             <input class="search__input" type="text" name="search" placeholder="Поиск по рецептам...">
         </div>
     </div>
 
-    <section class="recent-recepies">
-        <div class="recent-recepies__headline-container">
-            <h1 class="recent-recepies__headline">Последние рецепты</h1>
-        </div>
-
-        <div class="recent-recepies__recipies_container">
-            <article class="recipe-preview">
-                <div class="recipe-preview__headline-container">
-                    <h2 class="recipe-preview__headline">Название</h2>
-                </div>
-                <div class="recipe-preview__recipe-illustration-container">
-                    <img src="" alt="Иллюстрация рецепта">
-                </div>
-            </article>
-
-            <article class="recipe-preview">
-                <div class="recipe-preview__headline-container">
-                    <h2 class="recipe-preview__headline">Название</h2>
-                </div>
-                <div class="recipe-preview__recipe-illustration-container">
-                    <img src="" alt="Иллюстрация рецепта">
-                </div>
-            </article>
-
-            <article class="recipe-preview">
-                <div class="recipe-preview__headline-container">
-                    <h2 class="recipe-preview__headline">Название</h2>
-                </div>
-                <div class="recipe-preview__recipe-illustration-container">
-                    <img src="" alt="Иллюстрация рецепта">
-                </div>
-            </article>
-        </div>
-
-    </section>
+    <recent-recepies></recent-recepies>
 
     <div class="add-recipes">
-        <img src="/assets/images/add-recipes.svg" width="64" height="64" alt=" ">
         <div class="add-recipes__button-container">
             <a routerLink="add-recipe" class="rs-button add-recipes__button">Создать рецепт</a>
         </div>

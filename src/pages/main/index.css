@@ -3,74 +3,16 @@
 }
 
 .search__input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-
-.search__button {
-    width: 64px;
-    height: 64px;
+    margin: 0 auto;
 }
 
 .search__input {
     padding: 8px 16px;
+    width: 100%;
     font-size: var(--doubled-font-size);
     line-height: var(--doubled-line-height);
     background-color: var(--primary-background-color);
     border: 2px solid var(--primary-border-color);
-    border-radius: var(--doubled-border-radius);
-}
-
-.recent-recepies {
-    margin: 64px 0;
-    padding: 32px;
-    background-color: var(--secondary-background-color);
-    border-radius: var(--doubled-border-radius);
-}
-
-.recent-recepies__headline-container {
-    margin-bottom: 16px;
-}
-
-.recent-recepies__headline {
-    font-size: var(--trippled-font-size);
-    line-height: var(--trippled-line-height);
-    color: var(--secondary-text-color);
-}
-
-.recent-recepies__recipies_container {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.recent-recepies__recipies_container > .recipe-preview {
-    flex: 1;
-}
-
-.recipe-preview {
-    max-width: 468px;
-    padding: 32px;
-    background-color: var(--primary-background-color);
-    border-radius: var(--doubled-border-radius);
-    box-shadow: 0 0 10px 10px var(--primary-box-shadow-color) inset;
-}
-
-.recipe-preview__headline-container {
-    margin-bottom: 16px;
-}
-
-.recipe-preview__headline {
-    font-size: var(--doubled-font-size);
-    line-height: var(--doubled-line-height);
-    color: var(--primary-text-color);
-}
-
-.recipe-preview__recipe-illustration-container {
-    height: 280px;
-    background-color: var(--secondary-background-color);
     border-radius: var(--doubled-border-radius);
 }
 
@@ -82,11 +24,18 @@
 }
 
 .add-recipes__button-container {
-    width: 399px;
+    width: 100%;
 }
 
 .add-recipes__button {
     width: 100%;
     display: inline-block;
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .search__input-container,
+    .add-recipes__button-container {
+        max-width: 400px;
+    }
 }
