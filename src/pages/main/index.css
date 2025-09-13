@@ -16,18 +16,18 @@
 
 .search__input {
     padding: 8px 16px;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    background-color: rgba(186, 192, 167, 0.7);
-    border: 2px solid black;
-    border-radius: 16px;
+    font-size: var(--doubled-font-size);
+    line-height: var(--doubled-line-height);
+    background-color: var(--primary-background-color);
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--doubled-border-radius);
 }
 
 .recent-recepies {
     margin: 64px 0;
     padding: 32px;
-    background-color: rgba(18, 14, 16, 0.85);
-    border-radius: 16px;
+    background-color: var(--secondary-background-color);
+    border-radius: var(--doubled-border-radius);
 }
 
 .recent-recepies__headline-container {
@@ -35,9 +35,9 @@
 }
 
 .recent-recepies__headline {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    color: white;
+    font-size: var(--trippled-font-size);
+    line-height: var(--trippled-line-height);
+    color: var(--secondary-text-color);
 }
 
 .recent-recepies__recipies_container {
@@ -53,9 +53,9 @@
 .recipe-preview {
     max-width: 468px;
     padding: 32px;
-    background-color: rgba(186, 192, 167, 0.7);
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25) inset;
-    border-radius: 16px;
+    background-color: var(--primary-background-color);
+    border-radius: var(--doubled-border-radius);
+    box-shadow: 0 0 10px 10px var(--primary-box-shadow-color) inset;
 }
 
 .recipe-preview__headline-container {
@@ -63,31 +63,30 @@
 }
 
 .recipe-preview__headline {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: black;
-    text-transform: uppercase;
+    font-size: var(--doubled-font-size);
+    line-height: var(--doubled-line-height);
+    color: var(--primary-text-color);
 }
 
 .recipe-preview__recipe-illustration-container {
     height: 280px;
-    border-radius: 16px;
-    background-color: #fff;
+    background-color: var(--secondary-background-color);
+    border-radius: var(--doubled-border-radius);
 }
 
-.add-recipes__button-container {
+.add-recipes {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-.add-recipes__button {
+.add-recipes__button-container {
     width: 399px;
-    padding: 8px 16px;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    background-color: rgba(186, 192, 167, 0.7);
-    border: 2px solid black;
-    border-radius: 16px;
+}
+
+.add-recipes__button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }

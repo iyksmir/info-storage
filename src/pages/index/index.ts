@@ -3,9 +3,9 @@ import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'index-page',
-  imports: [RouterLink],
   templateUrl: './index.html',
   styleUrl: './index.css',
+  imports: [RouterLink],
 })
 
 export class IndexPage {};

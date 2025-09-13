@@ -1,10 +1,8 @@
-@keyframes buttons-appearance {
+@keyframes block-appearance {
     from {
-        transform: scale(0);
         opacity: 0;
     }
     to {
-        transform: scale(1);
         opacity: 1;
     }
 }
@@ -20,20 +18,20 @@
 .welcome__project-description-container {
     padding: 32px;
     max-width: 645px;
-    color: var(--text-color);
-    background-color: rgba(18, 14, 16, 0.85);
-    border-radius: var(--border-radius);
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    border-radius: var(--primary-border-radius);
 }
 
 .welcome__project-name {
     margin-bottom: 16px;
-    font-size: 4rem;
-    line-height: 4.5rem;
+    font-size: var(--trippled-font-size);
+    line-height: var(--trippled-line-height);
 }
 
 .welcome__project-description {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: var(--doubled-font-size);
+    line-height: var(--doubled-line-height);
 }
 
 .welcome__buttons-container  {
@@ -42,7 +40,6 @@
     grid-template-columns: repeat(2, auto);
     column-gap: 92px;
     align-items: flex-start;
-    animation: buttons-appearance .5s ease-out;
 }
 
 .welcome__button-container {
@@ -57,6 +54,7 @@
     background-position: center center;
     background-size: cover;
     z-index: 1;
+    will-change: opacity;
 }
 
 .welcome__button-container:first-of-type:before {
@@ -65,31 +63,36 @@
     width: 240px;
     height: 240px;
     transform: scaleX(-1) translateX(-50%);
+    animation: block-appearance .3s ease-in .3s forwards;
+    opacity: 0;
+}
+
+.welcome__button-container:last-of-type {
+    margin-top: 32px;
 }
 
 .welcome__button-container:last-of-type:before {
-    top: -240px;
+    top: -250px;
     right: 90%;
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
     transform: translateX(50%);
+    animation: block-appearance .3s ease-in .9s forwards;
+    opacity: 0;
 }
 
 .start-cooking,
 .load-config {
     position: relative;
-    padding: 16px;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    border-radius: 12px;
-    background-color: rgba(186, 192, 167, 0.7);
-    border: 1px solid #000;
-    color: #000;
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
-    cursor: pointer;
+    opacity: 0;
     z-index: 100;
+    will-change: opacity;
+}
+
+.start-cooking {
+    animation: block-appearance .3s ease-out .6s forwards;
 }
 
 .load-config {
-    margin-top: 32px;
+    animation: block-appearance .3s ease-in 1.2s forwards;
 }
