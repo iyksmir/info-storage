@@ -74,19 +74,19 @@
     border-radius: var(--doubled-border-radius);
 }
 
-.add-recipes__button-container {
+.add-recipes {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-.add-recipes__button {
+.add-recipes__button-container {
     width: 399px;
-    padding: 8px 16px;
-    font-size: var(--doubled-font-size);
-    line-height: var(--doubled-line-height);
-    background-color: var(--primary-background-color);
-    border: 2px solid var(--primary-border-color);
-    border-radius: var(--doubled-border-radius);
+}
+
+.add-recipes__button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }

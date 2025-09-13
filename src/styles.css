@@ -45,3 +45,14 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.rs-button {
+    padding: 16px;
+    font-size: var(--doubled-font-size);
+    line-height: var(--doubled-line-height);
+    border-radius: var(--doubled-border-radius);
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--primary-border-color);
+    color: var(--primary-text-color);
+    box-shadow: 4px 4px 4px 0 var(--primary-box-shadow-color) inset;
+}
